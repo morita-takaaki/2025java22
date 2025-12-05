@@ -15,7 +15,7 @@ function showScreen(title, description, imageFile) {
     showScreen(
       "画面1",
       "ここは画面1です。",
-      "screen1.jpg"
+      "screen1.png"
     );
   });
 }
