@@ -14,8 +14,8 @@ function showScreen(title, description, imageFile) {
   document.getElementById("backBtn").addEventListener("click", () => {
     showScreen(
       "画面1",
-      "ここは画面1です。最初の画面に戻ってきました。",
-      "screen1.png"
+      "ここは画面1です。",
+      "screen1.jpg"
     );
   });
 }
@@ -24,8 +24,8 @@ function showScreen(title, description, imageFile) {
 document.getElementById("btn1").addEventListener("click", () => {
   showScreen(
     "画面1",
-    "ここは画面1です。学習の最初に表示される画面です。",
-    "screen1.png"
+    "ここは画面1です。",
+    "screen1.jpg"
   );
 });
 
@@ -33,8 +33,8 @@ document.getElementById("btn1").addEventListener("click", () => {
 document.getElementById("btn2").addEventListener("click", () => {
   showScreen(
     "画面2",
-    "ここは画面2です。情報を表示するサンプル画面です。",
-    "screen2.png"
+    "ここは画面2です。",
+    "screen2.jpg"
   );
 });
 
@@ -42,20 +42,12 @@ document.getElementById("btn2").addEventListener("click", () => {
 document.getElementById("btn3").addEventListener("click", () => {
   showScreen(
     "画面3",
-    "ここは画面3です。画像を使った表示の練習ができます。",
-    "screen3.png"
+    "ここは画面3です。",
+    "screen3.jpg"
   );
 });
 
 // ------- 中央AI 外部リンク -------
 document.getElementById("btn4").addEventListener("click", () => {
-  // iframe を表示
-  const frame = document.getElementById("webFrame");
-  frame.style.display = "block";
-  frame.src = "https://chuo-ai.jp/";
-
-  // 通常画面の要素は非表示にする
-  document.getElementById("title").innerText = "中央AI（外部ページ）";
-  document.getElementById("text").innerText = "";
-  document.getElementById("image").style.display = "none";
+  window.open("https://chuo-ai.jp/", "_blank");
 });
