@@ -49,5 +49,13 @@ document.getElementById("btn3").addEventListener("click", () => {
 
 // ------- 中央AI 外部リンク -------
 document.getElementById("btn4").addEventListener("click", () => {
-  window.open("https://chuo-ai.jp/", "_blank");
+  // iframe を表示
+  const frame = document.getElementById("webFrame");
+  frame.style.display = "block";
+  frame.src = "https://chuo-ai.jp/";
+
+  // 通常画面の要素は非表示にする
+  document.getElementById("title").innerText = "中央AI（外部ページ）";
+  document.getElementById("text").innerText = "";
+  document.getElementById("image").style.display = "none";
 });
