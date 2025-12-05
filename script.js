@@ -25,7 +25,7 @@ document.getElementById("btn1").addEventListener("click", () => {
   showScreen(
     "画面1",
     "ここは画面1です。",
-    "screen1.jpg"
+    "screen1.png"
   );
 });
 
@@ -34,7 +34,7 @@ document.getElementById("btn2").addEventListener("click", () => {
   showScreen(
     "画面2",
     "ここは画面2です。",
-    "screen2.jpg"
+    "screen2.png"
   );
 });
 
@@ -43,7 +43,7 @@ document.getElementById("btn3").addEventListener("click", () => {
   showScreen(
     "画面3",
     "ここは画面3です。",
-    "screen3.jpg"
+    "screen3.png"
   );
 });
 
